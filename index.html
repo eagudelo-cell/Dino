@@ -2,70 +2,85 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Dinosaurios con Texto</title>
+    <title>Dinosaurios simples</title>
     <style>
         body {
             background-color: #111;
             color: #00ff88;
-            font-family: "Courier New", monospace;
+            font-family: Arial, sans-serif;
             text-align: center;
         }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         .dino {
-            white-space: pre;
-            font-size: 14px;
-            margin: 30px;
-            padding: 20px;
+            margin: 20px;
+            padding: 10px;
             border: 2px solid #00ff88;
             border-radius: 10px;
-            display: inline-block;
         }
-        h1 {
-            color: #00ffcc;
+        svg {
+            width: 150px;
+            height: 150px;
         }
     </style>
 </head>
 <body>
 
-<h1>Dinosaurios en ASCII 🦖</h1>
+<h1>Dinosaurios con dibujos simples 🦖</h1>
 
-<div class="dino">
-   000
-  0   0
- 0 0 0 0
- 0  ^  0
-  0---0
-   | |
-  /   \   T-Rex
- /_/ \_\
-</div>
+<div class="galeria">
 
-<div class="dino">
-     /\
-    /**\ 
-   /****\ 
-  /******\ 
- /********\ 
-/**********\
-    ||||
-    ||||   Braquiosaurio
-</div>
+    <div class="dino">
+        <!-- Dino 1 -->
+        <svg>
+            <circle cx="75" cy="60" r="30" fill="#00ff88"/>
+            <circle cx="95" cy="50" r="5" fill="#111"/>
+            <rect x="60" y="90" width="10" height="30" fill="#00ff88"/>
+            <rect x="80" y="90" width="10" height="30" fill="#00ff88"/>
+        </svg>
+        <p>T-Rex</p>
+    </div>
 
-<div class="dino">
-   __
-  / _)
- / /  
-/ /   ___
-\ \__/ @ \
- \______/   Velociraptor
-</div>
+    <div class="dino">
+        <!-- Dino 2 -->
+        <svg>
+            <rect x="30" y="50" width="90" height="40" fill="#00ccff"/>
+            <circle cx="120" cy="60" r="15" fill="#00ccff"/>
+            <circle cx="125" cy="55" r="3" fill="#111"/>
+            <rect x="40" y="90" width="10" height="30" fill="#00ccff"/>
+            <rect x="80" y="90" width="10" height="30" fill="#00ccff"/>
+        </svg>
+        <p>Braquiosaurio</p>
+    </div>
 
-<div class="dino">
-  ^  ^  
- (00) 
- /||\ 
-//||\\
-  ||    Triceratops
-  ^^
+    <div class="dino">
+        <!-- Dino 3 -->
+        <svg>
+            <polygon points="40,90 100,90 120,60 60,60" fill="#ffcc00"/>
+            <circle cx="120" cy="60" r="10" fill="#ffcc00"/>
+            <circle cx="123" cy="58" r="2" fill="#111"/>
+            <rect x="50" y="90" width="8" height="25" fill="#ffcc00"/>
+            <rect x="80" y="90" width="8" height="25" fill="#ffcc00"/>
+        </svg>
+        <p>Velociraptor</p>
+    </div>
+
+    <div class="dino">
+        <!-- Dino 4 -->
+        <svg>
+            <ellipse cx="75" cy="70" rx="40" ry="25" fill="#ff6699"/>
+            <circle cx="40" cy="60" r="15" fill="#ff6699"/>
+            <circle cx="35" cy="55" r="3" fill="#111"/>
+            <polygon points="25,50 15,60 25,65" fill="#ff6699"/>
+            <rect x="60" y="90" width="8" height="25" fill="#ff6699"/>
+            <rect x="85" y="90" width="8" height="25" fill="#ff6699"/>
+        </svg>
+        <p>Triceratops</p>
+    </div>
+
 </div>
 
 </body>

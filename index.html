@@ -2,45 +2,71 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Galería de Dinosaurios</title>
+    <title>Dinosaurios con Texto</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            background-color: #111;
+            color: #00ff88;
+            font-family: "Courier New", monospace;
             text-align: center;
         }
-        h1 {
-            color: #2e8b57;
-        }
-        .galeria {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .galeria img {
-            width: 250px;
-            height: 180px;
-            margin: 10px;
+        .dino {
+            white-space: pre;
+            font-size: 14px;
+            margin: 30px;
+            padding: 20px;
+            border: 2px solid #00ff88;
             border-radius: 10px;
-            border: 3px solid #2e8b57;
-            object-fit: cover;
-            transition: transform 0.3s;
+            display: inline-block;
         }
-        .galeria img:hover {
-            transform: scale(1.1);
+        h1 {
+            color: #00ffcc;
         }
     </style>
 </head>
 <body>
 
-    <h1>Galería de Dinosaurios 🦖</h1>
+<h1>Dinosaurios en ASCII 🦖</h1>
 
-    <div class="galeria">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Tyrannosaurus_Rex.png" alt="Tiranosaurio Rex">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Triceratops_prorsus.png" alt="Triceratops">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Velociraptor.png" alt="Velociraptor">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Brachiosaurus.png" alt="Brachiosaurus">
-    </div>
+<div class="dino">
+   000
+  0   0
+ 0 0 0 0
+ 0  ^  0
+  0---0
+   | |
+  /   \   T-Rex
+ /_/ \_\
+</div>
+
+<div class="dino">
+     /\
+    /**\ 
+   /****\ 
+  /******\ 
+ /********\ 
+/**********\
+    ||||
+    ||||   Braquiosaurio
+</div>
+
+<div class="dino">
+   __
+  / _)
+ / /  
+/ /   ___
+\ \__/ @ \
+ \______/   Velociraptor
+</div>
+
+<div class="dino">
+  ^  ^  
+ (00) 
+ /||\ 
+//||\\
+  ||    Triceratops
+  ^^
+</div>
 
 </body>
 </html>

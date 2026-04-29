@@ -1,5 +1,46 @@
-fvsddgtdhgtdfchghgdfj
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería de Dinosaurios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        h1 {
+            color: #2e8b57;
+        }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .galeria img {
+            width: 250px;
+            height: 180px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 3px solid #2e8b57;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .galeria img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
 
-dsrgserg
+    <h1>Galería de Dinosaurios 🦖</h1>
 
+    <div class="galeria">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Tyrannosaurus_Rex.png" alt="Tiranosaurio Rex">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Triceratops_prorsus.png" alt="Triceratops">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Velociraptor.png" alt="Velociraptor">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Brachiosaurus.png" alt="Brachiosaurus">
+    </div>
 
+</body>
+</html>
